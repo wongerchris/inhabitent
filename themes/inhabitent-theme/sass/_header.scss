@@ -1,0 +1,21 @@
+.site-header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	color: #fff;
+	text-shadow: 1px 1px 2px #323232;
+	font-family: Novecento Sans Web,sans-serif;
+	background-color: black;
+
+	.site-branding{
+		
+	}
+	.main-navigation{
+			width: 40%;
+			li{
+				margin-left: 30px;
+			}
+		}
+
+}
