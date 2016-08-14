@@ -1,0 +1,135 @@
+.front-page-hero{
+	background: linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)),#969696 url(../../images/home-hero.jpg) no-repeat top;
+  background-size: cover,cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+//Shop stuff section
+.shop-stuff{
+	h2{
+		//font-family: $font_titles_normal;
+		//font-weight: 200;
+		//font-size: 2.4rem;
+		//text-transform: uppercase;
+	}
+}
+
+.shop-stuff-container {
+	display:flex;
+	flex-direction: row;
+	width:1120px;
+	justify-content: space-between;
+	.shop-stuff-box{
+		flex-basis: 23%;
+		padding: 15px 10px 20px 10px;
+		border:$border_solid;
+		border-top: 4px solid #e1e1e1;
+		text-align: center;
+		font-family: $font_main_light;
+		&:hover{
+			border:$border_solid_hover;
+			border-top: 4px solid #d99054;
+		}
+
+		.shop-stuff-icon{
+			width: 70px;
+		}
+	}
+}
+
+//Latest Adventure Section-------------------------
+.adventure-stuff-container {
+	display:flex;
+	flex-direction: row;
+	width:1120px;
+	justify-content: space-between;
+	.adventure-stuff-box{
+		position: relative;
+		overflow: hidden;
+		background-size: cover;
+		background-position: 50%;
+		color: $color__white;
+		overflow: hidden;
+		&:before{
+			position: absolute;
+		  content:"";
+		  top:0;
+		  left:0;
+		  width:100%;
+		  height:100%;
+		  background: linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4));
+		}	
+	.adventure-info{
+		position:relative;
+		width: 90%;
+		margin-left: 20px;
+		h3{
+			font-family: $font_main_light;
+			font-weight: 200;
+			line-height: 1.2;
+			}
+		}	
+	}	
+
+	.adventure-big{
+		flex-basis: 50%;
+		height: 550px;
+		.adventure-1{
+			height:100%;
+			border-right: 10px solid #fff;
+			font-size: 3rem;
+			h3{
+				margin-bottom:0;
+			}
+		}
+	}
+	.adventure-small{
+		flex-basis: 50%;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		.adventure-stuff-box{
+			border-left:10px solid #fff;
+		}
+	}
+}
+
+.adventure-small{
+	height: 550px;
+	.adventure-2{
+		flex-basis: 100%;
+		height: 50%;
+		border-bottom:10px solid #fff;
+		border-left:10px solid #fff;
+		h3{
+			font-size: 2.4rem;
+		}
+	}
+	.adventure-3{
+		flex-basis: 50%;
+		height: 50%;
+		border-top:10px solid #fff;
+		border-right:10px solid #fff;
+		h3{
+			font-size: 1.7rem;
+		}
+	}
+	.adventure-4{
+		flex-basis: 50%;
+		height: 50%;
+		border-top:10px solid #fff;
+		h3{
+			font-size: 1.7rem;
+		}
+	}
+}
+
+
+
+
+
+
+
+

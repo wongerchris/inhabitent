@@ -1,0 +1,59 @@
+//Global Styles
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  position: relative;
+}
+a {
+	text-decoration: none;
+	color:$color__white;
+}
+
+a:hover{
+	text-decoration: underline;
+	color:$color__white;
+	cursor:pointer;
+}
+
+.site-content {
+  min-height: calc(100vh -  #{$footer_height});
+}
+
+.container {
+	padding: $container_padding;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.btn{	
+  background: #248a83;
+  border: none;
+  border-radius: 0;
+  color: #fff;
+  cursor: pointer;
+  font-family: $font_titles_normal;
+  font-size: 14.4px;
+  font-size: .9rem;
+  line-height: 1;
+  padding: .75rem 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+
+
+.btn-white{
+  @extent .btn;
+  background-color: rgba(0,0,0,0);
+  border: 2px solid #fff;
+  
+}
+
+
+
+
+

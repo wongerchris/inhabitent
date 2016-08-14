@@ -21,7 +21,6 @@ function red_starter_body_classes( $classes ) {
 }
 add_filter( 'body_class', 'red_starter_body_classes' );
 
-
 // Remove "Editor" links from sub-menus
 function inhabitent_remove_submenus() {
     remove_submenu_page( 'themes.php', 'theme-editor.php' );
@@ -29,7 +28,7 @@ function inhabitent_remove_submenus() {
 }
 add_action( 'admin_menu', 'inhabitent_remove_submenus', 110 );
 
-//------
+//Change the login logo to Inhabitent log
 function my_login_logo() { ?>
     <style type="text/css">
         #login h1 a, .login h1 a {
@@ -43,19 +42,17 @@ function my_login_logo() { ?>
 <?php }
 add_action( 'login_head', 'my_login_logo' );
 
-
-//------
+//Change inhabitent login link url to inhabitent home page
 function inhabitent_login_url(){
 	return home_url();
 }
 
 add_filter('login_headerurl','inhabitent_login_url');
 
-//------
+//Change the inhabitent login logo hover to print out below
 function inhabitent_title_hover(){
 	return 'Inhabitent Supply Co';
 }
-
 add_filter('login_headertitle','inhabitent_title_hover');
 
 

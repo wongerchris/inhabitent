@@ -1,3 +1,4 @@
+
 .site-header {
 	display: flex;
 	flex-direction: row;
@@ -5,17 +6,35 @@
 	align-items: center;
 	color: #fff;
 	text-shadow: 1px 1px 2px #323232;
-	font-family: Novecento Sans Web,sans-serif;
-	background-color: black;
+	font-family: $font_titles_normal;
+	height: 55px;
+	position: fixed;
+	width:100%;
+	z-index: 3;
+
+	.site-description{
+		display: none;
+	}
 
 	.site-branding{
-		
+		width: 50px;
+		height: auto;
+		margin-left: 100px;
 	}
 	.main-navigation{
-			width: 40%;
+			width: 30%;
 			li{
 				margin-left: 30px;
+				a{
+					color: #fff;
+					text-transform: uppercase;
+				}
 			}
 		}
+	}
 
-}
+
+
+
+
+
