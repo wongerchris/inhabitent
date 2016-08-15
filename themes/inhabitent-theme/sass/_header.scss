@@ -1,4 +1,3 @@
-
 .site-header {
 	display: flex;
 	flex-direction: row;
@@ -9,6 +8,7 @@
 	font-family: $font_titles_normal;
 	height: 55px;
 	position: fixed;
+	top:0;
 	width:100%;
 	z-index: 3;
 

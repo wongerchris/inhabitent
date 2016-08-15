@@ -16,13 +16,47 @@
 }
 
 .journal-stuff-box{
+	position: relative;
 	.journal-stuff-content{
 		display: flex;
 		flex-direction: column;
-		padding: 5px;
+		padding: 8px;
 		text-align: left;
 		padding-bottom: 10px;
 		border-top: 4px solid #e1e1e1;
 		margin-top: -8px;
+		
+		h3{
+				font-size: 1.2rem;
+				line-height: 1.25;
+				font-family: $font_titles_bold;
+				text-transform: uppercase;
+				letter-spacing: 2px;
+				padding-bottom: 40px;
+				
+			a{
+				color: $color__green;
+				&:hover,&:active{
+					text-decoration: none;
+					color: #000;
+				}
+			}
+		}
+
+		p{
+			font-size: .75rem;
+			margin-bottom: -18px;
+		}
+		
+		.btn-black{
+			position: absolute;
+			bottom: 8px;
+		}
+		a{
+			color:#000;
+		&:hover, &:active{
+			color: #fff;
+		}
+		}
 	}
 }

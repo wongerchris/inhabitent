@@ -40,4 +40,5 @@
 						</div>
 					</div>
 				</div>
+				<a href="#" class="btn adventure-btn">More Adventures</a>
 </section>

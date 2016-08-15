@@ -6,6 +6,8 @@ body {
   min-height: 100%;
   position: relative;
 }
+
+//Link styles
 a {
 	text-decoration: none;
 	color:$color__white;
@@ -17,10 +19,16 @@ a:hover{
 	cursor:pointer;
 }
 
-.site-content {
+a:visited{
+  color:$color__white;
+  cursor:pointer;
+}
+
+.content-area {
   min-height: calc(100vh -  #{$footer_height});
 }
 
+//General Container 
 .container {
 	padding: $container_padding;
 	display: flex;
@@ -28,12 +36,11 @@ a:hover{
 	align-items: center;
 	justify-content: center;
 }
-
+//Different Buttons
 .btn{	
   background: #248a83;
   border: none;
   border-radius: 0;
-  color: #fff;
   cursor: pointer;
   font-family: $font_titles_normal;
   font-size: 14.4px;
@@ -42,15 +49,62 @@ a:hover{
   padding: .75rem 1.5rem;
   text-decoration: none;
   text-transform: uppercase;
+  &:hover,&:active{
+    background-color: #19625d;
+    text-decoration: none;
+  }
 }
-
-
 
 .btn-white{
   @extent .btn;
   background-color: rgba(0,0,0,0);
-  border: 2px solid #fff;
-  
+  border: 1px solid #fff; 
+  color: #fff;
+  &:hover,&:active{
+    border: none;
+    background-color: $color__green;
+    text-decoration: none;
+  }
+}
+
+.btn-black{
+  @extent .btn;
+  background-color: rgba(0,0,0,0);
+  border: 1px solid #000; 
+  color: #000;
+  &:hover,&:active{
+    border: none;
+    background-color: $color__green;
+    text-decoration: none;
+  }
+}
+
+//Main Content adjustments for fixed header
+//styles for header when admin bar is present
+.admin-bar{
+  .site-header{
+    top:32px;
+  }
+}
+
+.page,.blog{
+  .site-content{
+    margin-top: 55px;
+  }
+  .site-header{
+    border-bottom:$border_solid;
+    background-color: rgba(255,255,255,.6);
+  }
+}
+
+.home{
+  .site-content{
+    margin-top: 0px;
+  }
+  .site-header{
+    border-bottom:none;
+    background-color: rgba(255,255,255,0);
+  }
 }
 
 

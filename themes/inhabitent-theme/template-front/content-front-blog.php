@@ -20,9 +20,10 @@
 						<div class="journal-stuff-box">
 							<?php the_post_thumbnail(); ?>
 							<div class="journal-stuff-content">
-								<?php the_date();?> <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?>.
-								<a href="<?php the_permalink() ?>" style="color:red;"rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a>
-								<a href="#" class="btn">Do Stuff</a>
+								<p><?php the_date();?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?>.</p>
+								<h3><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
+								
+								<a href="#" class="btn btn-black">Read Entry</a>
 							</div>
 						</div>
 
