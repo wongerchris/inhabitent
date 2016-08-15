@@ -1,0 +1,28 @@
+.journal-stuff-container{
+	display: flex;
+	flex-direction: row;
+	width:1120px;
+	justify-content: space-between;	
+	.journal-stuff-box{
+		flex-basis: 32%;
+		border:$border_solid;
+		text-align: center;
+		font-family: $font_main_light;
+		img{
+			min-height: 250px;
+		}
+	}
+
+}
+
+.journal-stuff-box{
+	.journal-stuff-content{
+		display: flex;
+		flex-direction: column;
+		padding: 5px;
+		text-align: left;
+		padding-bottom: 10px;
+		border-top: 4px solid #e1e1e1;
+		margin-top: -8px;
+	}
+}
