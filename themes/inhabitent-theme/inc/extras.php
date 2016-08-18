@@ -56,5 +56,44 @@ function inhabitent_title_hover(){
 add_filter('login_headertitle','inhabitent_title_hover');
 
 
+//Adjusting archive page loop for product page
+function inhabitent_modify_product_archive_query($query){
+    if(is_post_type_archive('product') && !is_admin() && $query->is_main_query()){
+        $query->set('post_per_page',16);
+        $query->set('order','ASC');
+        $query->set('orderby','title');
+    }
+}
+add_action('pre_get_posts','inhabitent_modify_product_archive_query');
+
+
+//To use inline style for background image
+
+function inhabitent_inline_styles_method() {
+    if (!is_page_template('about.php')){
+        return;
+
+    }
+        $imageUrl = CFS()->get( 'about_banner_image' );
+
+        if(!$imageUrl){
+          return;
+        }
+// url({$imageUrl});
+
+        $custom_css = "
+                .about-hero-image{
+                  background: linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)),#969696 url({$imageUrl}) no-repeat bottom;
+                  background-size: cover;
+                  height: 100vh;
+                }";
+        wp_add_inline_style( 'inhabitent-style', $custom_css );
+}
+add_action( 'wp_enqueue_scripts', 'inhabitent_inline_styles_method' );
+
+
+
+
+
 
 

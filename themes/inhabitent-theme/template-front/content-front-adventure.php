@@ -7,10 +7,10 @@
 
 ?>
 
-<section class="adventure-stuff container">
+<section class="adventure-stuff container-flex">
 				<h2>Latest Adventures</h2>
 
-				<div class="adventure-stuff-container">
+				<div class="adventure-stuff-container container">
 					<div class="adventure-big">
 						<div class="adventure-stuff-box  adventure-1" style="background-image:url(<?php bloginfo('template_directory'); ?>/images/canoe-girl.jpg)">
 						<div class="adventure-info">

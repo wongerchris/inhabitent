@@ -736,7 +736,7 @@ a:visited {
 .content-area {
   min-height: calc(100vh -  350px); }
 
-.container {
+.container-flex {
   padding: 10px;
   display: -ms-flexbox;
   display: flex;
@@ -746,6 +746,10 @@ a:visited {
       align-items: center;
   -ms-flex-pack: center;
       justify-content: center; }
+
+.container {
+  width: 1120px;
+  margin: 0 auto; }
 
 .btn {
   background: #248a83;
@@ -793,12 +797,16 @@ a:visited {
   border-bottom: 1px solid #e1e1e1;
   background-color: rgba(255, 255, 255, 0.6); }
 
-.home .site-content {
+.home .site-content, .page-template-about .site-content {
   margin-top: 0px; }
 
-.home .site-header {
+.home .site-header, .page-template-about .site-header {
   border-bottom: none;
   background-color: rgba(255, 255, 255, 0); }
+
+.entry-content {
+  font-family: "merriweatherlight", serif;
+  font-weight: 200; }
 
 .site-header {
   display: -ms-flexbox;
@@ -921,7 +929,6 @@ a:visited {
   display: flex;
   -ms-flex-direction: row;
       flex-direction: row;
-  width: 1120px;
   -ms-flex-pack: justify;
       justify-content: space-between; }
   .adventure-stuff-container .adventure-stuff-box {
@@ -1004,6 +1011,110 @@ a:visited {
     font-size: 1.25rem;
     margin-top: 20px; }
 
+.widget-title {
+  font-family: "novecento_sans_widedemibold", san-serif;
+  font-size: 1.5rem;
+  color: black; }
+
+.textwidget .contact-info {
+  margin-bottom: -5px; }
+
+.textwidget a {
+  color: #248A83;
+  font-family: "merriweatherlight", serif; }
+
+.textwidget span {
+  color: black;
+  font-family: "merriweatherlight", serif; }
+
+.day-of-week {
+  font-family: "merriweatherbold", serif; }
+
+.widget_archive ul {
+  list-style-type: none;
+  margin-left: -2rem; }
+  .widget_archive ul a {
+    color: #248A83;
+    font-family: "merriweatherlight", serif; }
+
+.journal-home-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+  .journal-home-wrapper .entry-content {
+    margin-bottom: 80px; }
+    .journal-home-wrapper .entry-content a {
+      color: black; }
+  .journal-home-wrapper .journal-box {
+    -ms-flex-preferred-size: 65%;
+        flex-basis: 65%;
+    margin-top: 50px; }
+  .journal-home-wrapper .widget-sidebar {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+    border-left: 1px solid #e1e1e1;
+    padding-left: 80px; }
+    .journal-home-wrapper .widget-sidebar .widget-area {
+      margin-top: 50px; }
+  .journal-home-wrapper .entry-header {
+    position: relative;
+    width: 100%;
+    height: 470px;
+    overflow: hidden; }
+    .journal-home-wrapper .entry-header img {
+      width: 100%; }
+    .journal-home-wrapper .entry-header .entry-title {
+      position: absolute;
+      top: 0;
+      background-color: #248A83;
+      font-family: "novecento_sans_widedemibold", san-serif;
+      width: 70%;
+      line-height: 40px;
+      font-size: 2rem;
+      padding: 10px 30px 10px 20px; }
+    .journal-home-wrapper .entry-header .entry-meta {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      background-color: #248A83;
+      color: #fff;
+      font-family: "novecento_sans_widenormal" san-serif;
+      padding: 2px 20px;
+      text-transform: uppercase; }
+
+.about-hero-image {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+  .about-hero-image:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    height: 0; }
+  .about-hero-image h2 {
+    font-family: "novecento_sans_widedemibold", san-serif;
+    color: #fff;
+    font-size: 3rem; }
+
+.about-page {
+  padding: 20px 150px; }
+  .about-page h3 {
+    text-align: center;
+    font-family: "novecento_sans_widedemibold", san-serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: black;
+    letter-spacing: 3px; }
+  .about-page p {
+    font-family: "merriweatherlight", serif; }
+
 .site-footer {
   background: url(../../images/dark-wood@2x.png);
   background-size: 512px 512px;
@@ -1047,6 +1158,9 @@ a:visited {
 
 .inner-footer-wrapper .footer-sidebar .footer-hours-day {
   font-family: "merriweatherbold", serif; }
+
+.inner-footer-wrapper .footer-sidebar span, .inner-footer-wrapper .footer-sidebar a {
+  color: #fff; }
 
 .inner-footer-wrapper .footer-1 {
   margin-right: -60px; }

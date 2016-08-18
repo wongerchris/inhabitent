@@ -1,0 +1,41 @@
+//Contact Info Widget
+.widget-title{
+	font-family:$font_titles_bold;
+	font-size: 1.5rem;
+	color: black;
+}
+
+.textwidget{
+	.contact-info{
+		margin-bottom: -5px;
+	}
+	
+	a{
+		color: $color__green;
+		//margin-left: 10px;
+		font-family: $font_main_light;
+	}
+	span{
+		//margin-left: 10px;
+		color: black;
+
+		font-family: $font_main_light;
+	}
+}
+//Business Hours Widget
+.day-of-week{
+	font-family: $font_main_bold;
+}
+
+//Archives Widget
+.widget_archive{
+	ul{
+		list-style-type: none;
+		margin-left: -2rem;
+
+		a{
+			color: $color__green;
+			font-family: $font_main_light;
+		}
+	}
+}

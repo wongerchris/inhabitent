@@ -7,28 +7,27 @@
 
 ?>
 
-	<section class="shop-stuff container">
+	<section class="shop-stuff container-flex">
 				<h2>Shop Stuff</h2>
-				<div class="shop-stuff-container">
+				
+			<div class="shop-stuff-container container">
+			
+
+			<?php
+				$args = array('taxonomy' => 'product-type', 'hide_empty' => true,'order' =>'ASC', 'orderby' =>'name');
+				$myterms = get_terms( $args );
+		
+				foreach( $myterms as $term ) : ?>
 					<div class="shop-stuff-box">
-						<img class="shop-stuff-icon"src="<?php bloginfo('template_directory'); ?>/images/do.svg" alt="inhabitent logo white" border="0"/>
-						<p>Get back to nature with all the tools and toys you need to enjoy the great outdoors.</p>
-						<a href="#" class="btn">Do Stuff</a>
-					</div>
-					<div class="shop-stuff-box">
-						<img class="shop-stuff-icon"src="<?php bloginfo('template_directory'); ?>/images/eat.svg" alt="inhabitent logo white" border="0"/>
-						<p>Nothing beats food cooked over a fire. We have all you need for good camping eats.</p>
-						<a href="#" class="btn">Eat Stuff</a>
-					</div>
-					<div class="shop-stuff-box">
-						<img class="shop-stuff-icon"src="<?php bloginfo('template_directory'); ?>/images/sleep.svg" alt="inhabitent logo white" border="0"/>
-						<p>Get a good night's rest in the wild in a home away from home that travels well.</p>
-						<a href="#" class="btn">Sleep Stuff</a>
-					</div>
-					<div class="shop-stuff-box">
-						<img class="shop-stuff-icon"src="<?php bloginfo('template_directory'); ?>/images/wear.svg" alt="inhabitent logo white" border="0"/>
-						<p>From flannel shirts to toques, look the part while roughing it in the great outdoors.</p>
-						<a href="#" class="btn">Wear Stuff</a>
-					</div>
-				</div>
+						<img class="shop-stuff-icon"src="<?php echo(get_template_directory_uri());?>/images/<?php echo $term->slug?>.svg" alt="shop icon" border="0"/>
+						<p><?php echo term_description( $term) ?></p>
+						<a href="<?php echo get_category_link( $term )?>" class="btn"><?php echo $term ->slug?> Stuff</a>
+					</div>	
+			<?php endforeach; ?>	
+
+
+			</div> 
+
 	</section>
+
+	
