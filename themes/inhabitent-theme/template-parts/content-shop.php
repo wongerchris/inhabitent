@@ -9,24 +9,19 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
+		<div class="shop-image-box">
 		<?php if ( has_post_thumbnail() ) : ?>
-			<?php the_post_thumbnail( 'large' ); ?>
+			<a href="<?php the_permalink() ?>"><?php the_post_thumbnail( 'large' ); ?></a>
 		<?php endif; ?>
 
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-
+		
+		</div>
 		
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
-		<?php the_content(); ?>
-		<?php
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html( 'Pages:' ),
-				'after'  => '</div>',
-			) );
-		?>
-		<?php echo CFS()->get( 'product_price' ); ?>
+		<?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
+		<h2><?php echo CFS()->get( 'product_price' );?></h2>
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
