@@ -712,7 +712,41 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-/* Front page */
+.page-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+  .page-wrapper .entry-content {
+    margin-bottom: 80px; }
+    .page-wrapper .entry-content a {
+      color: black; }
+  .page-wrapper .page-box {
+    -ms-flex-preferred-size: 65%;
+        flex-basis: 65%; }
+  .page-wrapper .widget-sidebar {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+    border-left: 1px solid #e1e1e1;
+    padding-left: 80px; }
+    .page-wrapper .widget-sidebar .widget-area {
+      margin-top: 50px; }
+  .page-wrapper .entry-title {
+    font-family: "novecento_sans_widedemibold", san-serif;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    letter-spacing: 2px; }
+  .page-wrapper h2 {
+    font-family: "novecento_sans_widedemibold", san-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: black;
+    font-size: 2.3rem; }
+  .page-wrapper .widget-title {
+    font-size: 1.5rem; }
+
 html {
   height: 100%; }
 
