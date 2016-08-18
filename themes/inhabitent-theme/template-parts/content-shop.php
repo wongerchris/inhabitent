@@ -26,6 +26,7 @@
 				'after'  => '</div>',
 			) );
 		?>
+		<?php echo CFS()->get( 'product_price' ); ?>
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">

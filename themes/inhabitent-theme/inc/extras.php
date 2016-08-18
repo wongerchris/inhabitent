@@ -59,7 +59,7 @@ add_filter('login_headertitle','inhabitent_title_hover');
 //Adjusting archive page loop for product page
 function inhabitent_modify_product_archive_query($query){
     if(is_post_type_archive('product') && !is_admin() && $query->is_main_query()){
-        $query->set('post_per_page',16);
+        $query->set('posts_per_page', 16);
         $query->set('order','ASC');
         $query->set('orderby','title');
     }

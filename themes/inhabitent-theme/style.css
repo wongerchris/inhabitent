@@ -790,10 +790,10 @@ a:visited {
 .admin-bar .site-header {
   top: 32px; }
 
-.page .site-content, .blog .site-content {
+.page .site-content, .blog .site-content, .archive .site-content {
   margin-top: 55px; }
 
-.page .site-header, .blog .site-header {
+.page .site-header, .blog .site-header, .archive .site-header {
   border-bottom: 1px solid #e1e1e1;
   background-color: rgba(255, 255, 255, 0.6); }
 
@@ -1114,6 +1114,38 @@ a:visited {
     letter-spacing: 3px; }
   .about-page p {
     font-family: "merriweatherlight", serif; }
+
+.shop-nav {
+  text-align: center;
+  margin-top: 100px;
+  padding-bottom: 45px;
+  border-bottom: 1px dashed #c8c8c8; }
+  .shop-nav ul {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0; }
+    .shop-nav ul li {
+      display: inline-block;
+      width: 90px; }
+  .shop-nav h2 {
+    font-family: "novecento_sans_widedemibold", san-serif;
+    line-height: 20px; }
+  .shop-nav a {
+    color: #248A83;
+    text-transform: uppercase;
+    font-family: "novecento_sans_widenormal" san-serif;
+    font-size: 1.2rem; }
+
+.shop-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .shop-wrapper article {
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%; }
 
 .site-footer {
   background: url(../../images/dark-wood@2x.png);
