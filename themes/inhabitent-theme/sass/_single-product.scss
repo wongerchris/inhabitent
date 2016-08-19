@@ -1,0 +1,13 @@
+.single-product-wrapper{
+	article{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		header{
+			flex-basis: 48%;
+		}
+		.entry-content{
+			flex-basis: 48%;
+		}
+	}
+}

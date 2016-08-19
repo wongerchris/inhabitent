@@ -10,7 +10,7 @@
 	.entry-content{
 		margin-bottom: 80px;
 		a{
-			color: black;
+			color: $color__purple;
 		}
 	}
 	.page-box{
@@ -30,7 +30,7 @@
 		font-family:$font_titles_bold; 
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: black;
+    color: $color__purple;
     font-size: 2.3rem;
 	}
 }

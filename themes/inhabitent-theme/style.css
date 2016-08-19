@@ -624,7 +624,7 @@ a {
   font-family: "merriweatherlight", serif; }
 
 .textwidget span {
-  color: black;
+  color: #2f1339;
   font-family: "merriweatherlight", serif; }
 
 .day-of-week {
@@ -794,7 +794,7 @@ object {
   .page-wrapper .entry-content {
     margin-bottom: 80px; }
     .page-wrapper .entry-content a {
-      color: black; }
+      color: #2f1339; }
   .page-wrapper .page-box {
     -ms-flex-preferred-size: 65%;
         flex-basis: 65%; }
@@ -810,7 +810,7 @@ object {
     font-family: "novecento_sans_widedemibold", san-serif;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: black;
+    color: #2f1339;
     font-size: 2.3rem; }
 
 html {
@@ -941,6 +941,9 @@ a:visited {
 
 .single .journal-home-wrapper .entry-content {
   margin-bottom: 0px; }
+
+.term-description {
+  font-family: "merriweatherlight", serif; }
 
 .front-page-hero {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #969696 url(../../images/home-hero.jpg) no-repeat top;
@@ -1127,7 +1130,7 @@ a:visited {
   font-family: "merriweatherlight", serif; }
 
 .textwidget span {
-  color: black;
+  color: #2f1339;
   font-family: "merriweatherlight", serif; }
 
 .day-of-week {
@@ -1218,7 +1221,7 @@ a:visited {
     font-family: "novecento_sans_widedemibold", san-serif;
     font-size: 2rem;
     text-transform: uppercase;
-    color: black;
+    color: #2f1339;
     letter-spacing: 3px; }
   .about-page p {
     font-family: "merriweatherlight", serif; }
@@ -1286,7 +1289,7 @@ a:visited {
       width: 80%;
       height: 0;
       line-height: 0;
-      border-bottom: 2px dotted black;
+      border-bottom: 2px dotted #2f1339;
       z-index: 0; }
     .shop-wrapper .entry-content .entry-title, .shop-wrapper .entry-content h2 {
       font-family: "merriweatherlight", serif;
@@ -1297,6 +1300,20 @@ a:visited {
       z-index: 1;
       letter-spacing: 0px;
       padding: 0 3px; }
+
+.single-product-wrapper article {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+  .single-product-wrapper article header {
+    -ms-flex-preferred-size: 48%;
+        flex-basis: 48%; }
+  .single-product-wrapper article .entry-content {
+    -ms-flex-preferred-size: 48%;
+        flex-basis: 48%; }
 
 .site-footer {
   background: url(../../images/dark-wood@2x.png);
