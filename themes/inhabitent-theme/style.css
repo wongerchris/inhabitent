@@ -611,6 +611,78 @@ a {
 .widget_search .search-submit {
   display: none; }
 
+.widget-title {
+  font-family: "novecento_sans_widedemibold", san-serif;
+  font-size: 1.5rem;
+  color: black; }
+
+.textwidget .contact-info {
+  margin-bottom: -5px; }
+
+.textwidget a {
+  color: #248A83;
+  font-family: "merriweatherlight", serif; }
+
+.textwidget span {
+  color: black;
+  font-family: "merriweatherlight", serif; }
+
+.day-of-week {
+  font-family: "merriweatherbold", serif; }
+
+.widget_archive ul {
+  list-style-type: none;
+  margin-left: -2rem; }
+  .widget_archive ul a {
+    color: #248A83;
+    font-family: "merriweatherlight", serif; }
+
+.widget-sidebar {
+  border-left: 1px solid #e1e1e1;
+  padding-left: 80px; }
+  .widget-sidebar .widget-area {
+    margin-top: 50px; }
+  .widget-sidebar .widget-title {
+    font-size: 1.5rem; }
+
+.wpcf7-form label {
+  color: #2f1339;
+  display: block;
+  font-family: "novecento_sans_widenormal" san-serif;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase; }
+  .wpcf7-form label span {
+    color: #d99054; }
+  .wpcf7-form label input[type="email"], .wpcf7-form label input[type="password"], .wpcf7-form label input[type="search"], .wpcf7-form label input[type="text"], .wpcf7-form label input[type="url"], .wpcf7-form label textarea {
+    color: #666666;
+    background-color: #f4f4f4;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #e1e1e1;
+    border-radius: 0px; }
+
+.wpcf7-form .wpcf7-submit {
+  background: #248a83;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  font-family: "novecento_sans_widenormal" san-serif;
+  font-size: 14.4px;
+  font-size: .9rem;
+  line-height: 1;
+  padding: .75rem 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  box-shadow: none;
+  color: #fff;
+  text-shadow: none; }
+  .wpcf7-form .wpcf7-submit:hover, .wpcf7-form .wpcf7-submit:active {
+    background-color: #19625d;
+    text-decoration: none;
+    box-shadow: none;
+    text-shadow: none; }
+
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
@@ -728,11 +800,7 @@ object {
         flex-basis: 65%; }
   .page-wrapper .widget-sidebar {
     -ms-flex-preferred-size: 30%;
-        flex-basis: 30%;
-    border-left: 1px solid #e1e1e1;
-    padding-left: 80px; }
-    .page-wrapper .widget-sidebar .widget-area {
-      margin-top: 50px; }
+        flex-basis: 30%; }
   .page-wrapper .entry-title {
     font-family: "novecento_sans_widedemibold", san-serif;
     font-size: 2.4rem;
@@ -744,8 +812,6 @@ object {
     text-transform: uppercase;
     color: black;
     font-size: 2.3rem; }
-  .page-wrapper .widget-title {
-    font-size: 1.5rem; }
 
 html {
   height: 100%; }
@@ -1071,6 +1137,14 @@ a:visited {
     color: #248A83;
     font-family: "merriweatherlight", serif; }
 
+.widget-sidebar {
+  border-left: 1px solid #e1e1e1;
+  padding-left: 80px; }
+  .widget-sidebar .widget-area {
+    margin-top: 50px; }
+  .widget-sidebar .widget-title {
+    font-size: 1.5rem; }
+
 .journal-home-wrapper {
   display: -ms-flexbox;
   display: flex;
@@ -1088,11 +1162,7 @@ a:visited {
     margin-top: 50px; }
   .journal-home-wrapper .widget-sidebar {
     -ms-flex-preferred-size: 30%;
-        flex-basis: 30%;
-    border-left: 1px solid #e1e1e1;
-    padding-left: 80px; }
-    .journal-home-wrapper .widget-sidebar .widget-area {
-      margin-top: 50px; }
+        flex-basis: 30%; }
   .journal-home-wrapper .entry-header {
     position: relative;
     width: 100%;

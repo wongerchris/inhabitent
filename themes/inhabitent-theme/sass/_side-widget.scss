@@ -39,3 +39,16 @@
 		}
 	}
 }
+
+//widget sidebar style 
+.widget-sidebar{
+		border-left: $border_solid;
+		padding-left: 80px;
+		.widget-area{
+			margin-top: 50px;
+	}
+.widget-title{
+		font-size: 1.5rem;
+	}
+}
+

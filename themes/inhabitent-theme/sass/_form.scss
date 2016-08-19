@@ -1,0 +1,44 @@
+.wpcf7-form{
+	label {
+    color: rgb(47, 19, 57);
+    display: block;
+    font-family: $font_titles_normal;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+	span{
+			color: $color__orange;
+		}
+	input[type="email"], input[type="password"], input[type="search"], input[type="text"], input[type="url"], textarea {
+    color: rgb(102, 102, 102);
+    background-color: rgb(244, 244, 244);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(225, 225, 225);
+    border-radius: 0px;
+		}
+	}
+	.wpcf7-submit{
+	  background: #248a83;
+	  border: none;
+	  border-radius: 0;
+	  cursor: pointer;
+	  font-family: $font_titles_normal;
+	  font-size: 14.4px;
+	  font-size: .9rem;
+	  line-height: 1;
+	  padding: .75rem 1.5rem;
+	  text-decoration: none;
+	  text-transform: uppercase;
+	  box-shadow: none;
+	  color: #fff;
+	  text-shadow: none;
+	  &:hover,&:active{
+	    background-color: #19625d;
+	    text-decoration: none;
+	    box-shadow: none;
+	    text-shadow: none;
+	  }
+	}
+	
+}
