@@ -890,10 +890,10 @@ a:visited {
 .admin-bar .site-header {
   top: 32px; }
 
-.page .site-content, .blog .site-content, .archive .site-content {
+.page .site-content, .blog .site-content, .archive .site-content, .single .site-content {
   margin-top: 55px; }
 
-.page .site-header, .blog .site-header, .archive .site-header {
+.page .site-header, .blog .site-header, .archive .site-header, .single .site-header {
   border-bottom: 1px solid #e1e1e1;
   background-color: rgba(255, 255, 255, 0.6); }
 
@@ -938,6 +938,9 @@ a:visited {
       .site-header .main-navigation li a {
         color: #fff;
         text-transform: uppercase; }
+
+.single .journal-home-wrapper .entry-content {
+  margin-bottom: 0px; }
 
 .front-page-hero {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #969696 url(../../images/home-hero.jpg) no-repeat top;
@@ -1178,7 +1181,8 @@ a:visited {
       width: 70%;
       line-height: 40px;
       font-size: 2rem;
-      padding: 10px 30px 10px 20px; }
+      padding: 10px 30px 10px 20px;
+      color: #fff; }
     .journal-home-wrapper .entry-header .entry-meta {
       position: absolute;
       bottom: 0;
