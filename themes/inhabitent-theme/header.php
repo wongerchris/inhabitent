@@ -23,9 +23,25 @@
 			<header id="masthead" class="site-header" role="banner">
 				<div class="site-branding">
 					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+
 					<p class="site-description"><?php bloginfo( 'description' ); ?></p>
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-					<img class="site-logo"src="<?php bloginfo('template_directory'); ?>/images/inhabitent-logo-tent-white.svg" alt="inhabitent logo white" border="0"/></a>
+										
+					<?php if (is_page( array('home','about'))) { ?>
+
+    				<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+						<img class="site-logo"src="<?php bloginfo('template_directory'); ?>/images/inhabitent-logo-tent-white.svg" alt="inhabitent logo white" border="0"/>
+						</a>
+
+    			<?php } else{ ?>
+
+    				<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+						<img class="site-logo"src="<?php bloginfo('template_directory'); ?>/images/inhabitent-logo-tent.svg" alt="inhabitent logo white" border="0"/>
+						</a>
+
+    			<?php } ?>
+					
+
+
 				</div><!-- .site-branding -->
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">

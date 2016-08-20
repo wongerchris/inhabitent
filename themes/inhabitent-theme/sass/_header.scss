@@ -3,8 +3,7 @@
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	color: #fff;
-	text-shadow: 1px 1px 2px #323232;
+	//text-shadow: 1px 1px 2px #323232;
 	font-family: $font_titles_normal;
 	height: 55px;
 	position: fixed;
@@ -19,19 +18,20 @@
 	.site-branding{
 		width: 50px;
 		height: auto;
-		margin-left: 100px;
+		margin-left: 155px;
 	}
 	.main-navigation{
-			width: 30%;
+			width: 40%;
 			li{
 				margin-left: 30px;
 				a{
-					color: #fff;
+					color: $color__green;
 					text-transform: uppercase;
 				}
 			}
 		}
 	}
+
 
 
 

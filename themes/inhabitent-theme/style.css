@@ -924,8 +924,6 @@ input[type="email"], input[type="password"], input[type="search"], input[type="t
       justify-content: space-between;
   -ms-flex-align: center;
       align-items: center;
-  color: #fff;
-  text-shadow: 1px 1px 2px #323232;
   font-family: "novecento_sans_widenormal" san-serif;
   height: 55px;
   position: fixed;
@@ -937,13 +935,13 @@ input[type="email"], input[type="password"], input[type="search"], input[type="t
   .site-header .site-branding {
     width: 50px;
     height: auto;
-    margin-left: 100px; }
+    margin-left: 155px; }
   .site-header .main-navigation {
-    width: 30%; }
+    width: 40%; }
     .site-header .main-navigation li {
       margin-left: 30px; }
       .site-header .main-navigation li a {
-        color: #fff;
+        color: #248A83;
         text-transform: uppercase; }
 
 .single .journal-home-wrapper .entry-content {
