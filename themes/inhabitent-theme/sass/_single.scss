@@ -1,9 +1,24 @@
 .single{
 	.journal-home-wrapper{
 		.entry-content{
-		margin-bottom: 0px;
+		margin-bottom: -15px;
 		}
 	}
 }
 
-
+.cat-links,.tags-links{
+		font-family: $font_titles_normal;
+		text-transform: uppercase;
+	a{
+		color: $color__green;
+		font-family: $font_titles_normal;
+		text-transform: uppercase;
+	&:hover, &:active{
+		text-decoration: none;
+		color: $color__purple;
+		}
+	}
+}
+.cat-links{
+	margin-right: 25px;
+}

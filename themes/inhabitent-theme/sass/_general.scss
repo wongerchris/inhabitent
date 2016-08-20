@@ -57,9 +57,13 @@ a:visited{
   padding: .75rem 1.5rem;
   text-decoration: none;
   text-transform: uppercase;
+  text-shadow: none;
+  box-shadow: none;
   &:hover,&:active{
     background-color: #19625d;
     text-decoration: none;
+    text-shadow: none;
+    box-shadow: none;
   }
 }
 
@@ -84,6 +88,8 @@ a:visited{
     border: none;
     background-color: $color__green;
     text-decoration: none;
+    box-shadow: none;
+    text-shadow: none;
   }
 }
 
@@ -120,6 +126,14 @@ a:visited{
   font-weight: 200;
 }
 
-
+//input forms style
+input[type="email"], input[type="password"], input[type="search"], input[type="text"], input[type="url"], textarea {
+    color: rgb(102, 102, 102);
+    background-color: rgb(244, 244, 244);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(225, 225, 225);
+    border-radius: 0px;
+    }
 
 

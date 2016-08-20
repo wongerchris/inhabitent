@@ -17,8 +17,10 @@ get_header(); ?>
 						
 						<?php get_template_part( 'template-parts/content', 'single' ); ?>
 						
-						<?php the_post_navigation(); ?>
 						
+						<button type="button" class="btn btn-black"><i class="fa fa-facebook"></i>Like</button>
+						<button type="button" class="btn btn-black"><i class="fa fa-twitter"></i>Tweet</button>
+						<button type="button" class="btn btn-black"><i class="fa fa-pinterest"></i>Pin</button>
 						<?php
 				
 							if ( comments_open() || get_comments_number() ) :

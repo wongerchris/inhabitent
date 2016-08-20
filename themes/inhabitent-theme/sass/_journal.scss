@@ -50,6 +50,18 @@
 		}
 	}
 }
+//Categories and Tags journal page
+.title-category{
+	margin-top: -40px; 
+	margin-bottom: 50px;
+	border-bottom: $border_solid;
+	.title-cat{
+		span{
+			font-family: $font_titles_bold;
+		}
+	}
+}
+
 
 
 

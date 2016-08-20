@@ -22,10 +22,14 @@ get_header(); ?>
 
 				<div class="entry-content">
 					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-					<?php echo CFS()->get( 'product_price' ); ?>
-					<?php echo CFS()->get( 'product_information' ); ?>
+					<?php echo '<h3>'.CFS()->get( 'product_price' ).'</h3>'; ?>
+					<?php echo '<p>'.CFS()->get( 'product_information' ).'</p>'; ?>
 					
 					<?php the_content(); ?>
+					
+					<button type="button" class="btn btn-black"><i class="fa fa-facebook"></i>Like</button>
+					<button type="button" class="btn btn-black"><i class="fa fa-twitter"></i>Tweet</button>
+					<button type="button" class="btn btn-black"><i class="fa fa-pinterest"></i>Pin</button>
 		
 				</div><!-- .entry-content -->
 			</article><!-- #post-## -->			

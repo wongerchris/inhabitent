@@ -1,4 +1,6 @@
 .single-product-wrapper{
+	margin-top: 100px;
+	margin-bottom: 200px;
 	article{
 		display: flex;
 		flex-direction: row;
@@ -8,6 +10,24 @@
 		}
 		.entry-content{
 			flex-basis: 48%;
+			margin-top: 0;
+		.entry-title{
+			font-family: $font_titles_bold;
+			text-transform: uppercase;
+			color: $color__orange;
+			line-height: 0;
+			font-size: 2.4rem;
+			letter-spacing: 2px;
 		}
+		h3{
+			font-family: $font_titles_normal;
+			font-weight: 200;
+			font-size: 2rem;
+		}
+		.fa{
+			margin-right:5px;
+		}
+	 }
 	}
 }
+
