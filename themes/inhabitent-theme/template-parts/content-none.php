@@ -6,8 +6,9 @@
  */
 
 ?>
-
-<section class="no-results not-found">
+<div class="container">
+<section class="no-results not-found ">
+	
 	<header class="page-header">
 		<h1 class="page-title"><?php esc_html( 'Nothing Found' ); ?></h1>
 	</header><!-- .page-header -->
@@ -28,5 +29,6 @@
 			<?php get_search_form(); ?>
 
 		<?php endif; ?>
+		</div>
 	</div><!-- .page-content -->
 </section><!-- .no-results -->
