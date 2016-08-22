@@ -79,7 +79,7 @@ function inhabitent_inline_styles_method() {
         if(!$imageUrl){
           return;
         }
-// url({$imageUrl});
+
 
         $custom_css = "
                 .about-hero-image{

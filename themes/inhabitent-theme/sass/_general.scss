@@ -96,16 +96,16 @@ a:visited{
 //Main Content adjustments for fixed header
 //styles for header when admin bar is present
 .admin-bar{
-  .site-header{
+  .head{
     top:32px;
   }
 }
 
-.page,.blog,.archive,.single{
+.page,.blog,.archive,.single,.search{
   .site-content{
     margin-top: 55px;
   }
-  .site-header{
+  .head{
     border-bottom:$border_solid;
     background-color: rgba(255,255,255,.6);
   }
@@ -115,10 +115,13 @@ a:visited{
   .site-content{
     margin-top: 0px;
   }
-  .site-header{
+  .head{
     border-bottom:none;
     background-color: rgba(255,255,255,0);
   }
+    
+
+
 }
 
 .entry-content{

@@ -15,7 +15,7 @@ get_header(); ?>
 		<div class="about-hero-image">
 			<h2><?php the_title(); ?></h2>
 		</div>
-
+		<div class="anchor"></div>
 <div class="container about-page">
 
 		<?php while ( have_posts() ) : the_post(); ?>

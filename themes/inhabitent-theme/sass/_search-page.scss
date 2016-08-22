@@ -1,0 +1,50 @@
+.search-home-wrapper{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+	article{
+		margin-bottom: 80px;
+	}
+	.page-title{
+		font-family: $font_titles_bold;
+	}
+	.entry-content{
+		margin-bottom: 80px;
+		a{
+			color: $color__purple;
+		}
+	}
+	.entry-summary{
+			font-family: $font_main_light;
+			a{
+				color:$color__purple;
+				&:hover{
+					color: #fff;
+				}
+			}
+		}
+	.search-box{
+		flex-basis: 65%;
+		margin-top: 50px;	
+	}
+	.widget-sidebar{
+		flex-basis: 30%;
+	}
+		.entry-header{
+			width: 100%;
+			height: auto;
+		.entry-title{
+			font-family: $font_titles_bold;
+			line-height: 40px;
+			font-size: 2rem;
+			a{
+				color:$color__green;
+			}
+			
+		}
+		.entry-meta{
+			display: none;
+		}
+	}
+}

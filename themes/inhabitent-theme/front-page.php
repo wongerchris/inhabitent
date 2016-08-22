@@ -12,7 +12,7 @@ get_header(); ?>
 			<section class="front-page-hero">
 				<img class="front-site-logo"src="<?php bloginfo('template_directory'); ?>/images/inhabitent-logo-full.svg" alt="inhabitent logo white" border="0"/>
 			</section>
-			
+			<div class="anchor"></div>
 			<?php get_template_part( 'template-front/content', 'front-shop' ); ?>
 
 			<?php get_template_part( 'template-front/content', 'front-blog' ); ?>

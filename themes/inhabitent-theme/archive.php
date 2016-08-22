@@ -1,6 +1,6 @@
 <?php
 /**
- * The main template file.
+ * The categories and tags page.
  *
  * @package RED_Starter_Theme
  */

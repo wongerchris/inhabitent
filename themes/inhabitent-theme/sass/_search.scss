@@ -1,0 +1,32 @@
+
+.search-form{
+	display: none;
+	border-left:1px solid transparent;
+	fieldset{
+		border:none;
+    padding: 0 .3rem;
+	}
+	
+	.search-label{
+		width: 200px;
+		display: inline-block;
+	}
+	input[type=search], textarea {
+    background-color: rgba(255,255,255,0);
+    border: none;
+    border-radius: 0;
+    font-family: $font_titles_normal;
+    text-transform: uppercase;
+    &::placeholder { 
+		  color: $color__yellow;
+		}
+    &:focus{
+    	outline:none;
+    }
+  }
+  
+  .fa{
+  	font-size: 1rem;
+  	color: $color__green;
+  }
+}
