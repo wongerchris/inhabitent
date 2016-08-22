@@ -918,10 +918,10 @@ a:visited {
 .admin-bar .head {
   top: 32px; }
 
-.page .site-content, .blog .site-content, .archive .site-content, .single .site-content, .search .site-content {
+.page .site-content, .blog .site-content, .archive .site-content, .single .site-content, .search .site-content, .error404 .site-content {
   margin-top: 55px; }
 
-.page .head, .blog .head, .archive .head, .single .head, .search .head {
+.page .head, .blog .head, .archive .head, .single .head, .search .head, .error404 .head {
   border-bottom: 1px solid #e1e1e1;
   background-color: rgba(255, 255, 255, 0.6); }
 
@@ -1445,6 +1445,36 @@ input[type="email"], input[type="password"], input[type="search"], input[type="t
     text-decoration: none;
     text-shadow: none;
     box-shadow: none; }
+
+.error404 .page-title {
+  text-transform: uppercase;
+  font-size: 2.3rem;
+  letter-spacing: 2px; }
+
+.error404 .page-content {
+  font-family: "merriweatherlight", serif; }
+
+.error404 h2 {
+  font-size: 1.5rem;
+  color: #2f1339;
+  font-family: "novecento_sans_widedemibold", san-serif; }
+
+.error404 ul {
+  list-style-type: none;
+  margin-left: -2.5rem; }
+
+.error404 a {
+  color: #248A83; }
+
+.error404 .search-404 {
+  margin-left: -5px; }
+  .error404 .search-404 fieldset {
+    border: none; }
+  .error404 .search-404 button {
+    display: none; }
+  .error404 .search-404 input {
+    color: #248A83;
+    font-family: "merriweatherlight", serif; }
 
 .shop-nav {
   text-align: center;
