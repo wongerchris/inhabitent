@@ -31,6 +31,8 @@ $( ".search-toggle" ).click(function(e) {
             	"color":"#248A83",
             	"text-shadow":"none",
             });
+            $('#site-logo').removeClass('logo');
+            $('#site-logo').addClass('logo2');
             
             $(".main-navigation li a,.search-toggle").hover(function(){
                   $(this).css("color", "#2f1339");
@@ -51,6 +53,9 @@ $( ".search-toggle" ).click(function(e) {
            $('.main-navigation li a,.search-toggle').css({
             	"color":"#fff",
             });
+           $('#site-logo').removeClass('logo2');
+            $('#site-logo').addClass('logo');
+
            $(".main-navigation li a,.search-toggle").hover(function(){
                   $(this).css("color", "#f0e4d1");
                   }, function(){

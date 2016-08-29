@@ -30,28 +30,11 @@
 
 							<p class="site-description"><?php bloginfo( 'description' );?></p>
 	
-				
-						<!-- <?php if (is_page( array('home','about'))) { ?>
-
-	    				<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-							<img class="site-logo" src="<?php echo(get_template_directory_uri());?>/images/inhabitent-logo-tent-white.svg" alt="inhabitent logo white"/>
+			
+			    		<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+								<div id="site-logo" class="logo"></div>
 							</a>
-
-	    			<?php } else{ ?>
-
-	    				<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-							<img class="site-logo" src="<?php echo(get_template_directory_uri());?>/images/inhabitent-logo-tent.svg" alt="inhabitent logo white"/>
-							</a>
-
-	    			<?php } ?> -->
-	    		<a href="<?php echo esc_url( home_url( '/' ) ); ?>">	
-					<div class="logo">
-					
-					</div>
-					</a>
 						
-					
-
 					</div><!-- .site-branding -->
 
 					<nav id="site-navigation" class="main-navigation">
