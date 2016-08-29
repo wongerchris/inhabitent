@@ -1,11 +1,10 @@
-
 .search-form{
 	display: none;
 	border-left:1px solid transparent;
 
 	fieldset{
 		border:none;
-    padding: 0 .3rem;
+    padding: 0 0 0 .8rem;
 	}
 	
 	.search-label{
@@ -19,16 +18,34 @@
     font-family: $font_titles_normal;
     text-transform: uppercase;
     &::placeholder { 
-		  color: $color__yellow;
+		  color: $color__mediumgrey;
+      text-shadow: 0 1px 0 #000;
 		}
     &:focus{
     	outline:none;
     }
   }
   
-  
   .fa{
   	font-size: 1rem;
   	color: $color__green;
   }
 }
+
+.home,.page-template-about{
+  .search-form{
+    input[type=search] {
+      color: #fff;
+    &::placeholder { 
+      color: $color__yellow;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+

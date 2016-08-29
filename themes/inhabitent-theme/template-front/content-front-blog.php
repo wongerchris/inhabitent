@@ -20,8 +20,8 @@
 						<div class="journal-stuff-box">
 							<?php the_post_thumbnail(); ?>
 							<div class="journal-stuff-content">
-								<p><?php the_date();?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?>.</p>
-								<h3><a href="<?php the_permalink() ?>" rel="to journal blog" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
+								<p><?php the_date();?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?></p>
+								<h3><a href="<?php the_permalink() ?>" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
 								
 								<a href="<?php the_permalink() ?>" class="btn btn-black">Read Entry</a>
 							</div>

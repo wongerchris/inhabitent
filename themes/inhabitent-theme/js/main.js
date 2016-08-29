@@ -7,44 +7,57 @@ $( ".search-toggle" ).click(function(e) {
   }, 500); 
 });
   
-})( jQuery );
+
 
 	//header scroll 
-(function($) {
-var targetOffset = $(".anchor").offset().top;
-var $w = $(window).scroll(function(){
+  if ($('.home').length > 0 || $('.page-template-about').length > 0) {
+  //do your thing
+
+  
+    var targetOffset = $(".anchor").offset().top;
+    var $w = $(window).scroll(function(){
 
 
-    if ( $w.scrollTop() > targetOffset ) {   
-        $('.head').css({
-        	"position":"fixed",
-        	"background-color":"rgba(255,255,255,.6)",
-        	"border-bottom":"1px solid #e1e1e1",
-      });
-        $('#wpadminbar').css({
-        	"visibility":"hidden",
-      });
-        $('.main-navigation li a,.search-toggle').css({
-        	"color":"#248A83",
-        	"text-shadow":"none",
-        });
-    
-    } else {
-        $('.head').css({
-        	"position":"absolute",
-        	"top":"0",
-        	"background-color":"rgba(255,255,255,0)",
-        	"border-bottom":"none",
-        });
-        $('#wpadminbar').css({
-        	"visibility":"visible"
-      });
-       $('.main-navigation li a,.search-toggle').css({
-        	"color":"#fff",
-        });
-    }
-
-});
-
+        if ( $w.scrollTop() > targetOffset ) {   
+            $('.head').css({
+            	"position":"fixed",
+            	"background-color":"rgba(255,255,255,.6)",
+            	"border-bottom":"1px solid #e1e1e1",
+          });
+            $('#wpadminbar').css({
+            	"visibility":"hidden",
+          });
+            $('.main-navigation li a,.search-toggle').css({
+            	"color":"#248A83",
+            	"text-shadow":"none",
+            });
+            
+            $(".main-navigation li a,.search-toggle").hover(function(){
+                  $(this).css("color", "#2f1339");
+                  }, function(){
+                  $(this).css("color", "#248A83");
+              });
+        
+        } else {
+            $('.head').css({
+            	"position":"absolute",
+            	"top":"0",
+            	"background-color":"rgba(255,255,255,0)",
+            	"border-bottom":"none",
+            });
+            $('#wpadminbar').css({
+            	"visibility":"visible"
+          });
+           $('.main-navigation li a,.search-toggle').css({
+            	"color":"#fff",
+            });
+           $(".main-navigation li a,.search-toggle").hover(function(){
+                  $(this).css("color", "#f0e4d1");
+                  }, function(){
+                  $(this).css("color", "#fff");
+              });
+        }
+    });
+}
 
 })( jQuery );

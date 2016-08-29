@@ -14,7 +14,9 @@
 	height: 100%;
 }
 .site-description{
-	display: none;
+	position: absolute;
+  top: -9999px;
+  left: -9999px;
 }
 
 .site-branding{
@@ -29,39 +31,32 @@
 	.search-toggle{
 		margin-left: 15px;
 	}
-		li{
-			margin-left: 15px;
-			a{
-				color: $color__green;
-				text-transform: uppercase;
-			&:hover{
-				text-decoration: none;
-				color: $color__purple;
+	li{
+		margin-left: 15px;
+		a{
+			color: $color__green;
+			text-transform: uppercase;
+		&:hover{
+			text-decoration: none;
+			color: $color__purple;
 			}
-			}
-		}
-		.search-toggle{
-			color:$color__green;
 		}
 	}
+	.search-toggle{
+		color:$color__green;
+	&:hover{
+		color: $color__purple;
+	}
+	}
+}
 	
-
-.page-template-about,.home{
-	.main-navigation{
-		li{
-			a{
-				color: #fff;
-				text-shadow: 1px 1px 2px #323232;
-			&:hover{
-				text-decoration: none;
-				color: red;
-			}
-			}
-		}
-		.search-toggle{
-      color: #fff;
-    }
-	}
+.logo{
+	
+	width: 50px;
+	height: 50px;
+	//background-color: blue;
+	background-image: url(../../images/home-hero.jpg);
+	background-size:50px 50px;
 }
 
 

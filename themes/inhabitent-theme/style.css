@@ -1,13 +1,13 @@
 /*!
-Theme Name: RED Starter Theme
-Theme URI: http://underscores.me/
-Author: RED Academy
-Author URI: http://www.redacademy.com
-Description: A WordPress starter theme for RED Academy students.
+Theme Name: inhabitent-theme  
+Theme URI: www.redacademy.com
+Author: Chris Wong
+Author URI: http://www.chrislwong.com
+Description: Built on underscores base theme.
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags:
+Text Domain: inhabitent-theme
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
@@ -681,7 +681,7 @@ a {
   border-left: 1px solid transparent; }
   .search-form fieldset {
     border: none;
-    padding: 0 .3rem; }
+    padding: 0 0 0 .8rem; }
   .search-form .search-label {
     width: 200px;
     display: inline-block; }
@@ -692,18 +692,33 @@ a {
     font-family: "novecento_sans_widenormal" san-serif;
     text-transform: uppercase; }
     .search-form input[type=search]::-webkit-input-placeholder, .search-form textarea::-webkit-input-placeholder {
-      color: #f0e4d1; }
+      color: #808080;
+      text-shadow: 0 1px 0 #000; }
     .search-form input[type=search]::-moz-placeholder, .search-form textarea::-moz-placeholder {
-      color: #f0e4d1; }
+      color: #808080;
+      text-shadow: 0 1px 0 #000; }
     .search-form input[type=search]:-ms-input-placeholder, .search-form textarea:-ms-input-placeholder {
-      color: #f0e4d1; }
+      color: #808080;
+      text-shadow: 0 1px 0 #000; }
     .search-form input[type=search]::placeholder, .search-form textarea::placeholder {
-      color: #f0e4d1; }
+      color: #808080;
+      text-shadow: 0 1px 0 #000; }
     .search-form input[type=search]:focus, .search-form textarea:focus {
       outline: none; }
   .search-form .fa {
     font-size: 1rem;
     color: #248A83; }
+
+.home .search-form input[type=search], .page-template-about .search-form input[type=search] {
+  color: #fff; }
+  .home .search-form input[type=search]::-webkit-input-placeholder, .page-template-about .search-form input[type=search]::-webkit-input-placeholder {
+    color: #f0e4d1; }
+  .home .search-form input[type=search]::-moz-placeholder, .page-template-about .search-form input[type=search]::-moz-placeholder {
+    color: #f0e4d1; }
+  .home .search-form input[type=search]:-ms-input-placeholder, .page-template-about .search-form input[type=search]:-ms-input-placeholder {
+    color: #f0e4d1; }
+  .home .search-form input[type=search]::placeholder, .page-template-about .search-form input[type=search]::placeholder {
+    color: #f0e4d1; }
 
 /*--------------------------------------------------------------
 # Content
@@ -964,7 +979,9 @@ input[type="email"], input[type="password"], input[type="search"], input[type="t
   height: 100%; }
 
 .site-description {
-  display: none; }
+  position: absolute;
+  top: -9999px;
+  left: -9999px; }
 
 .site-branding {
   width: 50px;
@@ -990,16 +1007,14 @@ input[type="email"], input[type="password"], input[type="search"], input[type="t
         color: #2f1339; }
   .main-navigation .search-toggle {
     color: #248A83; }
+    .main-navigation .search-toggle:hover {
+      color: #2f1339; }
 
-.page-template-about .main-navigation li a, .home .main-navigation li a {
-  color: #fff;
-  text-shadow: 1px 1px 2px #323232; }
-  .page-template-about .main-navigation li a:hover, .home .main-navigation li a:hover {
-    text-decoration: none;
-    color: red; }
-
-.page-template-about .main-navigation .search-toggle, .home .main-navigation .search-toggle {
-  color: #fff; }
+.logo {
+  width: 50px;
+  height: 50px;
+  background-image: url(../../images/home-hero.jpg);
+  background-size: 50px 50px; }
 
 .single .journal-home-wrapper .entry-content {
   margin-bottom: -15px; }
@@ -1128,24 +1143,24 @@ input[type="email"], input[type="password"], input[type="search"], input[type="t
       width: 100%;
       height: 100%;
       background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)); }
-    .adventure-stuff-container .adventure-stuff-box .adventure-info {
-      position: relative;
-      width: 90%;
-      margin-left: 20px; }
-      .adventure-stuff-container .adventure-stuff-box .adventure-info h3 {
-        font-family: "merriweatherlight", serif;
-        font-weight: 200;
-        line-height: 1.2; }
+  .adventure-stuff-container .adventure-info {
+    position: relative;
+    width: 90%;
+    margin-left: 20px; }
+    .adventure-stuff-container .adventure-info h3 {
+      font-family: "merriweatherlight", serif;
+      font-weight: 200;
+      line-height: 1.2; }
   .adventure-stuff-container .adventure-big {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
     height: 550px; }
-    .adventure-stuff-container .adventure-big .adventure-1 {
-      height: 100%;
-      border-right: 10px solid #fff;
-      font-size: 3rem; }
-      .adventure-stuff-container .adventure-big .adventure-1 h3 {
-        margin-bottom: 0; }
+  .adventure-stuff-container .adventure-1 {
+    height: 100%;
+    border-right: 10px solid #fff;
+    font-size: 3rem; }
+    .adventure-stuff-container .adventure-1 h3 {
+      margin-bottom: 0; }
   .adventure-stuff-container .adventure-small {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
@@ -1155,8 +1170,8 @@ input[type="email"], input[type="password"], input[type="search"], input[type="t
         flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
-    .adventure-stuff-container .adventure-small .adventure-stuff-box {
-      border-left: 10px solid #fff; }
+  .adventure-stuff-container .adventure-stuff-box {
+    border-left: 10px solid #fff; }
 
 .adventure-small {
   height: 550px; }
@@ -1257,9 +1272,11 @@ input[type="email"], input[type="password"], input[type="search"], input[type="t
       top: 0;
       background-color: #248A83;
       font-family: "novecento_sans_widedemibold", san-serif;
-      width: 70%;
+      text-transform: uppercase;
+      width: 80%;
       line-height: 40px;
-      font-size: 2rem;
+      font-size: 2.1rem;
+      letter-spacing: 2px;
       padding: 10px 30px 10px 20px;
       color: #fff; }
     .journal-home-wrapper .entry-header .entry-meta {

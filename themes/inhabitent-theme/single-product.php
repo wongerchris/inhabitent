@@ -8,7 +8,7 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+		<main id="main" class="site-main">
 
 		<div class="single-product-wrapper container">
 		<?php while ( have_posts() ) : the_post(); ?>
@@ -23,7 +23,7 @@ get_header(); ?>
 				<div class="entry-content">
 					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 					<?php echo '<h3>'.CFS()->get( 'product_price' ).'</h3>'; ?>
-					<?php echo '<p>'.CFS()->get( 'product_information' ).'</p>'; ?>
+					<?php echo CFS()->get( 'product_information' ); ?>
 					
 					<?php the_content(); ?>
 					

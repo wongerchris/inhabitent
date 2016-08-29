@@ -8,9 +8,10 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+		<main id="main" class="site-main">
 			<section class="front-page-hero">
-				<img class="front-site-logo"src="<?php bloginfo('template_directory'); ?>/images/inhabitent-logo-full.svg" alt="inhabitent logo white" border="0"/>
+				<h2 class="site-title screen-reader-text">Inhabitent</h2>
+				<img class="front-site-logo" src="<?php echo(get_template_directory_uri());?>/images/inhabitent-logo-full.svg" alt="inhabitent logo white"/>
 			</section>
 			<div class="anchor"></div>
 			<?php get_template_part( 'template-front/content', 'front-shop' ); ?>

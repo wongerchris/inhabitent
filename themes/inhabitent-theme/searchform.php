@@ -1,4 +1,4 @@
-<form role="search" method="get" class="search-main search-404" action="<?php echo home_url( '/' ); ?>">
+<form method="get" class="search-main search-404" action="<?php echo home_url( '/' ); ?>">
 	<fieldset>
 		<button class="search-submit">
 			<span class="icon-search" aria-hidden="true">
