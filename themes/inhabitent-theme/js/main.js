@@ -11,9 +11,7 @@ $( ".search-toggle" ).click(function(e) {
 
 	//header scroll 
   if ($('.home').length > 0 || $('.page-template-about').length > 0) {
-  //do your thing
 
-  
     var targetOffset = $(".anchor").offset().top;
     var $w = $(window).scroll(function(){
 
