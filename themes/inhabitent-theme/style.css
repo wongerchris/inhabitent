@@ -1167,11 +1167,11 @@ input[type="email"], input[type="password"], input[type="search"], input[type="t
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
     height: 550px; }
-  .adventure-stuff-container .adventure-1 {
+  .adventure-stuff-container .adventure-main {
     height: 100%;
     border-right: 10px solid #fff;
     font-size: 3rem; }
-    .adventure-stuff-container .adventure-1 h3 {
+    .adventure-stuff-container .adventure-main h3 {
       margin-bottom: 0; }
   .adventure-stuff-container .adventure-small {
     -ms-flex-preferred-size: 50%;
@@ -1182,43 +1182,56 @@ input[type="email"], input[type="password"], input[type="search"], input[type="t
         flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
-  .adventure-stuff-container .adventure-stuff-box {
-    border-left: 10px solid #fff; }
 
 .adventure-small {
   height: 550px; }
-  .adventure-small .adventure-2 {
+  .adventure-small .adventure-2:nth-child(1) {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
     height: 50%;
-    border-bottom: 10px solid #fff;
-    border-left: 10px solid #fff; }
-    .adventure-small .adventure-2 h3 {
+    border-left: 10px solid #fff;
+    border-bottom: 10px solid #fff; }
+    .adventure-small .adventure-2:nth-child(1) h3 {
       font-size: 2.4rem; }
-  .adventure-small .adventure-3 {
+  .adventure-small .adventure-2:nth-child(2) {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
     height: 50%;
     border-top: 10px solid #fff;
-    border-right: 10px solid #fff; }
-    .adventure-small .adventure-3 h3 {
+    border-right: 10px solid #fff;
+    border-left: 10px solid #fff; }
+    .adventure-small .adventure-2:nth-child(2) h3 {
       font-size: 1.7rem; }
-  .adventure-small .adventure-4 {
+  .adventure-small .adventure-2:nth-child(3) {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
     height: 50%;
-    border-top: 10px solid #fff; }
-    .adventure-small .adventure-4 h3 {
+    border-top: 10px solid #fff;
+    border-left: 10px solid #fff; }
+    .adventure-small .adventure-2:nth-child(3) h3 {
       font-size: 1.7rem; }
+
+.btn-wrapper {
+  width: 1120px;
+  margin-top: 50px; }
 
 .adventure-stuff {
   margin-bottom: 50px; }
   .adventure-stuff .adventure-btn {
     -ms-flex-item-align: start;
         align-self: flex-start;
-    margin-left: 141px;
     font-size: 1.25rem;
     margin-top: 20px; }
+
+.container-flex-adventure {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center; }
 
 .widget-title {
   font-family: "novecento_sans_widedemibold", san-serif;

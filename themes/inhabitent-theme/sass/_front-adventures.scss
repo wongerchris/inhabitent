@@ -36,7 +36,7 @@
 		flex-basis: 50%;
 		height: 550px;	
 	}
-	.adventure-1{
+	.adventure-main{
 			height:100%;
 			border-right: 10px solid #fff;
 			font-size: 3rem;
@@ -51,49 +51,57 @@
 		flex-direction: row;
 		flex-wrap: wrap;		
 	}
-	.adventure-stuff-box{
-		border-left:10px solid #fff;
-	}
 }
 
 .adventure-small{
 	height: 550px;
-	.adventure-2{
+	.adventure-2:nth-child(1){
 		flex-basis: 100%;
 		height: 50%;
-		border-bottom:10px solid #fff;
 		border-left:10px solid #fff;
+		border-bottom:10px solid #fff;
 		h3{
 			font-size: 2.4rem;
 		}
 	}
-	.adventure-3{
+	.adventure-2:nth-child(2){
 		flex-basis: 50%;
 		height: 50%;
 		border-top:10px solid #fff;
 		border-right:10px solid #fff;
+		border-left:10px solid #fff;
 		h3{
 			font-size: 1.7rem;
 		}
 	}
-	.adventure-4{
+	.adventure-2:nth-child(3){
 		flex-basis: 50%;
 		height: 50%;
 		border-top:10px solid #fff;
+		border-left:10px solid #fff;
 		h3{
 			font-size: 1.7rem;
 		}
 	}
 }
 
+.btn-wrapper{
+	width: 1120px;
+	margin-top: 50px;
+}
 .adventure-stuff{
 	margin-bottom: 50px;
 	.adventure-btn{
 			align-self: flex-start;
-			margin-left: 141px;
 			font-size: 1.25rem;
 			margin-top: 20px;
 		}
 }
 
+.container-flex-adventure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 

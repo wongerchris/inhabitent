@@ -7,38 +7,78 @@
 
 ?>
 
-<section class="adventure-stuff container-flex">
+<!-- <?php
+    $loop = new WP_Query( array( 'post_type' => 'adventure','posts_per_page' => 1, 'order' =>'ASC' ) );
+    if ( $loop->have_posts() ) :
+        while ( $loop->have_posts() ) : $loop->the_post(); ?>
+            <div class="pindex">
+                <?php if ( has_post_thumbnail() ) { ?>
+                    <div class="pimage">
+                        <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+                    </div>
+                <?php } ?>
+                <div class="ptitle">
+                    <h2><?php echo get_the_title(); ?></h2>
+                </div>
+            </div>
+        <?php endwhile;
+        
+    endif;
+    wp_reset_postdata();
+?> -->
+
+
+<section class="adventure-stuff container-flex-adventure container">
 				<h2>Latest Adventures</h2>
 
-				<div class="adventure-stuff-container container">
+				<div class="adventure-stuff-container ">
+
 					<div class="adventure-big">
-						<div class="adventure-stuff-box  adventure-1" style="background-image:url(<?php echo(get_template_directory_uri());?>/images/canoe-girl.jpg)">
-						<div class="adventure-info">
-							<h3>Getting Back to Nature in a Canoe</h3>
-							<a href="#" class="btn btn-white">Read More</a>
+					<?php
+						global $post;
+						$args = array('post_type' => 'adventure', 'posts_per_page' => 1,'order' =>'ASC');
+						$myposts = get_posts( $args );
+				
+						
+
+					foreach( $myposts as $post ) :	setup_postdata($post); ?>
+						<?php 
+						    $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( 1200,800 ), false, '' ); 
+						?>
+	
+						<div class="adventure-stuff-box  adventure-main" style="background-image:url(<?php echo $src[0]; ?>)">
+								<div class="adventure-info">
+								
+									<h3><?php the_title(); ?></h3>
+									<a href="<?php the_permalink() ?>" class="btn btn-white">Read More</a>
+								</div>	
 						</div>
-						</div>
+						<?php endforeach;wp_reset_postdata(); ?>
+
 					</div>
+
+
 					<div class="adventure-small">
-						<div class="adventure-stuff-box adventure-2" style="background-image:url(<?php echo(get_template_directory_uri());?>/images/beach-bonfire.jpg)">
-						<div class="adventure-info">
-							<h3>A Night with Friends at the Beach</h3>
-							<a href="#" class="btn btn-white">Read More</a>
+						<?php
+						global $post;
+						$args = array('post_type' => 'adventure', 'posts_per_page' => 3,'order' =>'ASC','offset' => 1);
+						$myposts = get_posts( $args );
+			
+						foreach( $myposts as $post ) :	setup_postdata($post); ?>
+						<?php 
+						    $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( 1200,800 ), false, '' ); 
+						?>
+						<div class="adventure-stuff-box adventure-2" style="background-image:url(<?php echo $src[0]; ?>)">
+								<div class="adventure-info">
+									<h3><?php the_title(); ?></h3>
+									<a href="<?php the_permalink() ?>" class="btn btn-white">Read More</a>
+								</div>
 						</div>
-						</div>
-						<div class="adventure-stuff-box adventure-3" style="background-image:url(<?php echo(get_template_directory_uri());?>/images/mountain-hikers.jpg)">
-						<div class="adventure-info">
-							<h3>Taking in the View at Big Mountain</h3>
-							<a href="#" class="btn btn-white">Read More</a>
-						</div>
-						</div>
-						<div class="adventure-stuff-box adventure-4" style="background-image:url(<?php echo(get_template_directory_uri());?>/images/night-sky.jpg)">
-						<div class="adventure-info">	
-							<h3>Star-Gazing at the Night Sky</h3>
-							<a href="#" class="btn btn-white">Read More</a>
-						</div>
-						</div>
+						<?php endforeach;wp_reset_postdata(); ?>
+						
 					</div>
 				</div>
-				<a href="#" class="btn adventure-btn">More Adventures</a>
+				<div class="btn-wrapper">
+					<a href="#" class="btn adventure-btn">More Adventures</a>
+				</div>
 </section>
