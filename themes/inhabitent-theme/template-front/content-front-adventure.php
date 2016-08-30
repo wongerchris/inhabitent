@@ -79,6 +79,6 @@
 					</div>
 				</div>
 				<div class="btn-wrapper">
-					<a href="#" class="btn adventure-btn">More Adventures</a>
+					<a href="<?php echo get_post_type_archive_link('adventure'); ?>" class="btn adventure-btn">More Adventures</a>
 				</div>
 </section>
