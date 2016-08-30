@@ -1,0 +1,24 @@
+.adventure-page-hero{
+  background-size: cover;
+  height: 100vh;
+}
+
+.adventure-content-single{
+	padding: 30px 160px;
+
+	.adventure-heading {
+		font-family:$font_titles_bold;
+		letter-spacing: 2px;
+		line-height: 45px;
+	}
+
+	p {
+		font-family:$font_main_light;
+	}
+	h3{
+		font-family: $font_titles_normal;
+		font-weight: 200;
+	  font-size: 1.4rem;
+	  margin-top: -25px;
+	}
+}

@@ -11,15 +11,14 @@ get_header(); ?>
 		<main id="main" class="site-main">
 		
 		
-		<header class="shop-nav container">
-		<h2>Latest Adventures</h2>
-			
+		<header class="adventure-header">
+			<h2>Latest Adventures</h2>	
 		</header>
 
-		<section class="shop-wrapper container">
+		<section class="container adventure-section">
 		<?php while ( have_posts() ) : the_post(); ?>
 
-			<?php get_template_part( 'template-parts/content', 'shop' ); ?>
+			<?php get_template_part( 'template-parts/content', 'adventure' ); ?>
 			
 		<?php endwhile; // End of the loop. ?>
 		

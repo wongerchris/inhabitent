@@ -57,12 +57,20 @@
 	background-size:50px 50px;
 }
 
-.home,.page-template-about{
+.home,.page-template-about, .single-adventure{
 	.logo{	
 		width: 50px;
 		height: 50px;
 		background-image: url(../../images/inhabitent-logo-tent-white.svg);
 		background-size:50px 50px;
+	}
+	.main-navigation{
+		a{
+			text-shadow: 1px 1px 1px #222;
+		}
+	}
+	.search-toggle{
+		text-shadow: 1px 1px 1px #222;
 	}
 }
 .logo2{	

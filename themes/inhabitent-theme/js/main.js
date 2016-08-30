@@ -10,7 +10,7 @@ $( ".search-toggle" ).click(function(e) {
 
 
 	//header scroll 
-  if ($('.home').length > 0 || $('.page-template-about').length > 0) {
+  if ($('.home, .page-template-about, .single-adventure').length > 0) {
 
     var targetOffset = $(".anchor").offset().top;
     var $w = $(window).scroll(function(){

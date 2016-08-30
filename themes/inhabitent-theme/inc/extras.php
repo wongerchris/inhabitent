@@ -66,6 +66,15 @@ function inhabitent_modify_product_archive_query($query){
 }
 add_action('pre_get_posts','inhabitent_modify_product_archive_query');
 
+//Adjusting archive page loop for product page
+function inhabitent_modify_adventure_archive_query($query){
+    if(is_post_type_archive('adventure') && !is_admin() && $query->is_main_query()){
+        $query->set('posts_per_page', 4);
+        $query->set('order','ASC');
+        $query->set('orderby','date');
+    }
+}
+add_action('pre_get_posts','inhabitent_modify_adventure_archive_query');
 
 //To use inline style for background image
 
