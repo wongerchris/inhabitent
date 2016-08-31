@@ -1,5 +1,5 @@
 ##Inhabitent Wordpress Website Overview
-#This project is a Wordpress website built on the starter theme provided by underscores.me.  
+####This project is a Wordpress website built on the starter theme provided by underscores.me.  
 
 The Inhabitent project explored a majority of the intricacies, behaviours and functionalities of the Wordpress CMS.  Wordpress powers a large percentage of websites on the web, and is therefor an important technology to know.  
 
@@ -10,11 +10,9 @@ The Inhabitent project took approximately 2 weeks to complete.
 ##Design Specifications 
 These specifications included design comps, typography requirements, color requirements and structural requirements.  
 
-#Design Comps
+####Design Comps
 
 ![Alt text](./themes/inhabitent-theme/images/comps/Homepage.png "Home Page")
-![Alt text](./themes/inhabitent-theme/images/comps/Product Type Archive Page.png "Product Type Archive Page")
-![Alt text](./themes/inhabitent-theme/images/comps/Journal Posts Page.png "Journal Posts Page")
 
 ##Project Highlights
 
@@ -34,12 +32,12 @@ Other highlights would include adding jQuery to the navigation menu for the scro
 
 ##Wordpress Specific things learned
 
-#1. Wordpress Hierarchy
+####1. Wordpress Hierarchy
 I used the Wordpress hierarchy extensively to add custom template pages for the About page, Front page, Product archive page, Product single page, Adventure archive page and Adventure single page. 
-#2. Custom Post Types
+####2. Custom Post Types
 I created two custom post types - Adventures and Products
-#3. Plugin Development
+####3. Plugin Development
 I created a Functionality plugin and a widget plugin.
-#4. The different ways to loop within Wordpress and why you would use the different loops.
+####4. The different ways to loop within Wordpress and why you would use the different loops.
 I used the main Wordpress loop, customized the main Wordpress loop for the Product Archive Page so that its default number was 16, and used the foreach custom loop on the Front Page for each post type. 
 
