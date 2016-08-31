@@ -40,5 +40,6 @@ I created two custom post types - Adventures and Products
 I created a Functionality plugin and a widget plugin.
 ####4. The different ways to loop within Wordpress and why you would use the different loops.
 I used the main Wordpress loop, customized the main Wordpress loop for the Product Archive Page so that its default number was 16, and used the foreach custom loop on the Front Page for each post type. 
-####5. Wordpress API
+####5. Wordpress REST API
+We created a Ajax requests using Ajax-specific functions in WordPress and used the wp_localize_script() function to pass data from the server side to the client side by making it available in JS variables.  
 
