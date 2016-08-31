@@ -5,14 +5,7 @@ The Inhabitent project explored a majority of the intricacies, behaviours and fu
 
 For this project we were given design comps and technical requirements as goals to code and style this website as accurately as possible to the “customers” desired outcome. 
 
-The Inhabitent project took approximately 2 weeks to complete.  
-
-##Design Specifications 
-These specifications included design comps, typography requirements, color requirements and structural requirements.  
-
-####Design Comps
-
-![Alt text](./themes/inhabitent-theme/images/comps/Homepage.png "Home Page")
+The Inhabitent project took approximately 2 weeks to complete. 
 
 ##Project Highlights
 
@@ -21,10 +14,17 @@ The project highlights for this project for me were learning how to add function
 Other highlights would include adding jQuery to the navigation menu for the scroll effect which only takes place on the Front Page, About Page and Adventures Single Post Page.   
 
 
+##Design Specifications 
+These specifications included design comps, typography requirements, color requirements and structural requirements.  
+
+####Design Comp Example
+
+![Alt text](./themes/inhabitent-theme/images/comps/Homepage.png "Home Page")
+
 ##Technologies Used
 
 1. PHP
-2. Wordpress Functions and Hooks
+2. Wordpress Methods, Loops and Hooks
 3. jQuery 
 4. HTML5
 5. SASS
@@ -40,4 +40,5 @@ I created two custom post types - Adventures and Products
 I created a Functionality plugin and a widget plugin.
 ####4. The different ways to loop within Wordpress and why you would use the different loops.
 I used the main Wordpress loop, customized the main Wordpress loop for the Product Archive Page so that its default number was 16, and used the foreach custom loop on the Front Page for each post type. 
+####5. Wordpress API
 
