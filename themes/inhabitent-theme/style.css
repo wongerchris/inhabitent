@@ -1010,12 +1010,6 @@ input[type="email"], input[type="password"], input[type="search"], input[type="t
     .main-navigation .search-toggle:hover {
       color: #2f1339; }
 
-.logo {
-  width: 50px;
-  height: 50px;
-  background-image: url(../../images/inhabitent-logo-tent.svg);
-  background-size: 50px 50px; }
-
 .home .logo, .page-template-about .logo, .single-adventure .logo {
   width: 50px;
   height: 50px;
@@ -1027,6 +1021,12 @@ input[type="email"], input[type="password"], input[type="search"], input[type="t
 
 .home .search-toggle, .page-template-about .search-toggle, .single-adventure .search-toggle {
   text-shadow: 1px 1px 1px #222; }
+
+.logo {
+  width: 50px;
+  height: 50px;
+  background-image: url(../../images/inhabitent-logo-tent.svg);
+  background-size: 50px 50px; }
 
 .logo2 {
   width: 50px;

@@ -19,7 +19,7 @@ $( ".search-toggle" ).click(function(e) {
         if ( $w.scrollTop() > targetOffset ) {   
             $('.head').css({
             	"position":"fixed",
-            	"background-color":"rgba(255,255,255,.6)",
+            	"background-color":"rgba(250,250,250,.8)",
             	"border-bottom":"1px solid #e1e1e1",
           });
             $('#wpadminbar').css({
@@ -50,6 +50,7 @@ $( ".search-toggle" ).click(function(e) {
           });
            $('.main-navigation li a,.search-toggle').css({
             	"color":"#fff",
+              "text-shadow":"1px 1px 1px #222",
             });
            $('#site-logo').removeClass('logo2');
             $('#site-logo').addClass('logo');

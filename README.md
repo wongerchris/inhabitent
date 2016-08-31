@@ -1,6 +1,7 @@
 ###Project 4 - Inhabitent Site
 
-###Custom Wordpress site
+##Custom Wordpress website
+![Alt text](./themes/inhabitent-theme/images/beach-bonfire.jpg "Bon Fire")
 
 ###Technologies Used
 
